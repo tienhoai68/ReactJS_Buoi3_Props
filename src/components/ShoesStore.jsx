@@ -15,7 +15,7 @@ export default class ShoesStore extends Component {
   render() {
     return (
       <div style={{ width: "90%" }} className='mx-auto'>
-        <div className='row'>
+        <div className='row align-items-center'>
           <div className="col-4 col-md-4 col-lg-4 mt-5">
             <ShoesInformation ShoesDetails={this.state.ShoesDetails} />
           </div>
