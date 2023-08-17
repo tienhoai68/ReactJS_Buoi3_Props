@@ -6,17 +6,17 @@ export default class Body extends Component {
        return this.props.data.map((element, index) => {
             return (
                 <div key={index} className="col-12 col-md-6 col-lg-3">
-                    <ProductItem getShowDetails= {this.props.getShowDetails} element ={element}/>
+                    <ProductItem ShoesDetails={this.props.ShoesDetails} getShowDetails= {this.props.getShowDetails} element ={element}/>
                 </div>
             )
-        })
-    }
+        });
+    };
 
     render() {
         return (
             <div className='row'>          
                     {this.renderShoes()}       
             </div>
-        )
-    }
+        );
+    };
 }

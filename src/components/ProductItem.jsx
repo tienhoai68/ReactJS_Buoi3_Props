@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Modal from './Modal';
 
 export default class ProductItem extends Component {
   render() {
@@ -8,9 +9,9 @@ export default class ProductItem extends Component {
         <div className="card mb-4">
             <img className="card-img-top w-100" src={image} alt="..." />
             <div className="card-body">
-                <h6 className="card-title">{name}</h6>
-                <p>${price}</p>
-                <button onClick={() => this.props.getShowDetails(this.props.element)} className='btn btn-dark'>Show Description</button>
+                <h6 style={{fontSize: 15}} className="card-title">{name}</h6>
+                <p style={{color : "red"}} >${price}</p>
+                <Modal ShoesDetails={this.props.ShoesDetails} element={this.props.element} getShowDetails={this.props.getShowDetails}/>
             </div>
         </div>
     </div>
