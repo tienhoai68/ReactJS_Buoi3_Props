@@ -6,7 +6,7 @@ export default class Body extends Component {
        return this.props.data.map((element, index) => {
             return (
                 <div key={index} className="col-12 col-md-6 col-lg-3">
-                    <ProductItem ShoesDetails={this.props.ShoesDetails} getShowDetails= {this.props.getShowDetails} element ={element}/>
+                    <ProductItem addToCart={this.props.addToCart} ShoesDetails={this.props.ShoesDetails} getShowDetails= {this.props.getShowDetails} element ={element}/>
                 </div>
             )
         });

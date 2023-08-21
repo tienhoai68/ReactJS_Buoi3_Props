@@ -11,7 +11,7 @@ export default class ProductItem extends Component {
             <div className="card-body">
                 <h6 style={{fontSize: 15}} className="card-title">{name}</h6>
                 <p style={{color : "red"}} >${price}</p>
-                <Modal ShoesDetails={this.props.ShoesDetails} element={this.props.element} getShowDetails={this.props.getShowDetails}/>
+                <Modal addToCart={this.props.addToCart} ShoesDetails={this.props.ShoesDetails} element={this.props.element} getShowDetails={this.props.getShowDetails}/>
             </div>
         </div>
     </div>

@@ -14,8 +14,9 @@ export default class Modal extends Component {
             data-target="#exampleModal"
             onClick={() => this.props.getShowDetails(this.props.element)}
           >
-            Show Details
+          Details
           </button>
+          <button onClick={()=> this.props.addToCart(this.props.element)} className="btn ml-1 btn-success">Buy now</button>
           <div
             className="modal fade"
             id="exampleModal"
